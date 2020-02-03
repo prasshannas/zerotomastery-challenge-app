@@ -1,0 +1,30 @@
+{
+  "name": "zerotomastery-challenge-app",
+  "version": "1.0.0",
+  "description": "Zero to Mastery - Challenge App - Server",
+  "main": "server/index.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "jest": "^25.1.0",
+    "nodemon": "^2.0.2",
+    "supertest": "^4.0.2"
+  },
+  "scripts": {
+    "dev": "NODE_ENV=dev nodemon src",
+    "start": "NODE_ENV=prod node src",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dan-Y-Ko/zerotomastery-challenge-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dan-Y-Ko/zerotomastery-challenge-app/issues"
+  },
+  "homepage": "https://github.com/Dan-Y-Ko/zerotomastery-challenge-app#readme"
+}
