@@ -5,7 +5,8 @@
   "main": "server/src/index.js",
   "scripts": {
     "server:dev": "npm run dev --prefix server",
-    "server:test": "npm test --prefix server"
+    "server:test": "npm test --prefix server",
+    "server:lint": "npm run lint --prefix server"
   },
   "repository": {
     "type": "git",
