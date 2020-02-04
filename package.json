@@ -4,12 +4,9 @@
   "description": "Zero to Mastery - Challenge App",
   "main": "server/src/index.js",
   "scripts": {
-    "dev": "concurrently --kill-others-on-fail \"npm run server:dev\" \"npm run client:dev\"",
-    "client:dev": "npm start --prefix client",
-    "client:build": "npm run build --prefix client",
-    "server:dev": "npm run dev --prefix server",
-    "server:test": "npm test --prefix server",
-    "server:lint": "npm run lint --prefix server"
+    "server:dev": "yarn --cwd server dev",
+    "server:test": "yarn --cwd server test",
+    "server:lint": "yarn --cwd server lint"
   },
   "repository": {
     "type": "git",
