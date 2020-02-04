@@ -25,7 +25,7 @@ Install the dependencies of the back-end:
 
 ```text
 cd zerotomastery-challenge-app/server
-npm install
+yarn
 ```
 
 Setup the database:
@@ -38,20 +38,20 @@ TODO
 
 ```text
 cd zerotomastery-challenge-app
-npm run server:dev
+yarn server:dev
 ```
 
 ### Running the Tests
 
 ```text
-npm run server:test
-npm run server:lint
+yarn server:test
+yarn server:lint
 ```
 
 ## Deployment
 
 ```text
-npm run server:prod
+yarn server:prod
 ```
 
 ## Built With
