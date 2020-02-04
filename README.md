@@ -60,7 +60,7 @@ yarn server:prod
 
 - [React](https://reactjs.org/) - Front-end JavaScript library
 - [Node.js](https://nodejs.org/) - Back-end JavaScript runtime
-- [npm](http://www.npmjs.com/) - Package manager
+- [Yarn](https://yarnpkg.com/) - Package manager
 - [Express](http://expressjs.com/) - Back-end framework
 - [PostgreSQL](http://postgresql.org/) - Database
 
