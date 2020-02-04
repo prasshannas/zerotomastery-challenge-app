@@ -1,4 +1,4 @@
-const env = ['dev', 'prod'].includes(process.env.NODE_ENV)
+const env = ['dev', 'prod', 'test'].includes(process.env.NODE_ENV)
   ? process.env.NODE_ENV
   : 'dev';
 
