@@ -21,6 +21,8 @@ Install the latest stable versions of:
 - [Node.js](https://nodejs.org/)
 - [PostgreSQL](https://www.postgresql.org/download/)
 
+We are using Yarn as our package manager.
+
 Install the dependencies of the back-end:
 
 ```text
