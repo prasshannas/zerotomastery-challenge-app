@@ -19,7 +19,7 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=dev nodemon src",
     "start": "cross-env NODE_ENV=prod node src",
-    "test": "cross-env NODE_ENV=test npm run lint && jest",
+    "test": "cross-env NODE_ENV=test yarn lint && jest",
     "lint": "eslint ."
   },
   "repository": {
