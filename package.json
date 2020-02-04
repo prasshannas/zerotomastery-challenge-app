@@ -19,5 +19,8 @@
     "url": "https://github.com/Dan-Y-Ko/zerotomastery-challenge-app/issues"
   },
   "homepage": "https://github.com/Dan-Y-Ko/zerotomastery-challenge-app#readme",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^5.1.0"
+  }
 }
