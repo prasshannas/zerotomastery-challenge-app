@@ -6,7 +6,9 @@
   "scripts": {
     "server:dev": "yarn --cwd server dev",
     "server:test": "yarn --cwd server test",
-    "server:lint": "yarn --cwd server lint"
+    "server:lint": "yarn --cwd server lint",
+    "client:dev": "yarn --cwd client start",
+    "all": "concurrently --k \"yarn server:dev\" \"yarn client:dev\""
   },
   "repository": {
     "type": "git",
