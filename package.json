@@ -4,6 +4,9 @@
   "description": "Zero to Mastery - Challenge App",
   "main": "server/src/index.js",
   "scripts": {
+    "dev": "concurrently --kill-others-on-fail \"npm run server:dev\" \"npm run client:dev\"",
+    "client:dev": "npm start --prefix client",
+    "client:build": "npm run build --prefix client",
     "server:dev": "npm run dev --prefix server",
     "server:test": "npm test --prefix server",
     "server:lint": "npm run lint --prefix server"
@@ -19,5 +22,8 @@
     "url": "https://github.com/Dan-Y-Ko/zerotomastery-challenge-app/issues"
   },
   "homepage": "https://github.com/Dan-Y-Ko/zerotomastery-challenge-app#readme",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^5.1.0"
+  }
 }
