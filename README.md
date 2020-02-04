@@ -40,7 +40,7 @@ TODO
 
 ```text
 cd zerotomastery-challenge-app
-yarn server:dev
+yarn all
 ```
 
 ### Running the Tests
