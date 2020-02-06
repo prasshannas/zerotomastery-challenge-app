@@ -4,11 +4,17 @@
   "description": "Zero to Mastery - Challenge App",
   "main": "server/src/index.js",
   "scripts": {
+    "server:install": "yarn --cwd server install",
     "server:dev": "yarn --cwd server dev",
+    "server:prod": "yarn --cwd server start",
     "server:test": "yarn --cwd server test",
-    "server:lint": "yarn --cwd server lint",
+    "client:install": "yarn --cwd client install",
     "client:dev": "yarn --cwd client start",
-    "all": "concurrently --k \"yarn server:dev\" \"yarn client:dev\""
+    "client:build": "yarn --cwd client build",
+    "all:install": "yarn install && yarn server:install && yarn client:install",
+    "all:dev": "concurrently --k \"yarn server:dev\" \"yarn client:dev\"",
+    "all:prod": "yarn client:build && yarn server:prod",
+    "all:test": "yarn server:test"
   },
   "repository": {
     "type": "git",
