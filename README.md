@@ -23,37 +23,29 @@ Install the latest stable versions of:
 
 We are using Yarn as our package manager.
 
-Install the dependencies of the back-end:
+Install all dependencies:
 
-```text
-cd zerotomastery-challenge-app/server
-yarn
+```
+yarn all:install
 ```
 
 Setup the database:
 
-```text
+```
 TODO
 ```
 
 ### Running
 
-```text
-cd zerotomastery-challenge-app
-yarn all
+```
+yarn all:dev // In development mode
+yarn all:prod // In production mode
 ```
 
 ### Running the Tests
 
-```text
-yarn server:test
-yarn server:lint
 ```
-
-## Deployment
-
-```text
-yarn server:prod
+yarn all:test
 ```
 
 ## Built With

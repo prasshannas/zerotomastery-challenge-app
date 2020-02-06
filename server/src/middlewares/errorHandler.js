@@ -2,5 +2,5 @@ module.exports = (err, req, res, next) => {
   if (!err) {
     return next();
   }
-  return res.send(500);
+  return res.sendStatus(500);
 };
