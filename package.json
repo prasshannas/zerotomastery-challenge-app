@@ -15,7 +15,19 @@
     "all:install": "yarn install && yarn server:install && yarn client:install",
     "all:dev": "concurrently --k \"yarn server:dev\" \"yarn client:dev\"",
     "all:prod": "yarn client:build && yarn server:prod",
-    "all:test": "yarn server:test"
+    "all:test": "yarn server:test",
+    "all:format": "prettier --write \"**/*.{js,jsx,css,json}\""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,css,json}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",
@@ -30,6 +42,9 @@
   "homepage": "https://github.com/Dan-Y-Ko/zerotomastery-challenge-app#readme",
   "dependencies": {},
   "devDependencies": {
-    "concurrently": "^5.1.0"
+    "concurrently": "^5.1.0",
+    "husky": "^4.2.1",
+    "lint-staged": "^10.0.7",
+    "prettier": "^1.19.1"
   }
 }
