@@ -1,33 +1,31 @@
-import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Header from './components/header/header.component';
-import './App.css';
+import React from "react";
+import { Switch, Route } from "react-router-dom";
+import Header from "./components/header/header.component";
+import HomePage from "./pages/home/homepage.component";
+import LoginPage from "./pages/login/loginpage.component";
+import ChallengePage from "./pages/challenges/challenge.components";
+import "./App.scss";
 
-function App() {
-  return (
-    <Router>
-      <div className="App">
-        <Header />
-
-        <Switch>
-          <Route path="/challenges">
-            <Challenges />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
-  );
-}
-
-function Home() {
-  return <h2>Home</h2>;
-}
-
-function Challenges() {
-  return <h2>Challenges</h2>;
-}
+const App = () => {
+    return ( <
+        div className = 'app' >
+        <
+        Header / >
+        <
+        Switch >
+        <
+        Route exact path = '/'
+        component = { HomePage }
+        />{" "} <
+        Route path = '/login'
+        component = { LoginPage }
+        />{" "} <
+        Route path = '/challenges'
+        component = { ChallengePage }
+        />{" "} < /
+        Switch > { " " } <
+        /div>
+    );
+};
 
 export default App;
