@@ -4,10 +4,7 @@ module.exports = {
     es6: true,
     jest: true,
   },
-  extends: [
-    'airbnb',
-    'plugin:jest/recommended',
-  ],
+  extends: ['airbnb', 'plugin:jest/recommended'],
   parserOptions: {
     ecmaVersion: 2018,
     ecmaFeatures: {
@@ -15,6 +12,7 @@ module.exports = {
     },
   },
   rules: {
+    'linebreak-style': ['error', 'windows'],
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'comma-dangle': ['error', 'always-multiline'],
   },
