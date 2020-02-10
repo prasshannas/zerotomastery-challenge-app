@@ -3,6 +3,7 @@ import "./loginpage.styles.scss";
 
 const LoginPage = () => (
   <div className="login-page">
+      <h2>LOGIN PAGE</h2>
     <form>
      <div className="form-input">     
        <label htmlFor="email">Enter Your Email</label>
@@ -17,6 +18,6 @@ const LoginPage = () => (
  
     </form>
   </div>
-)
+);
 
 export default LoginPage;

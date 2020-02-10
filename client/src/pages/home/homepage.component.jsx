@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../../components/header/header.component';
 const HomePage = () => (
   <div className="homepage">
-    Home Page
+      <h2>HOME  PAGE</h2>
   </div>
 )
 
