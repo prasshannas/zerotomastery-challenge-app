@@ -41,8 +41,42 @@ const Header = ({ isLoggedIn }) => {
   const handleLogOut = () => {
     handleClose();
 
-    // Logout logic
+    // TODO: Logout logic
   };
+
+  const renderProfileMenu = (
+    <div>
+      <IconButton
+        aria-label='account of current user'
+        aria-controls='menu-appbar'
+        aria-haspopup='true'
+        onClick={handleMenu}
+        color='inherit'
+      >
+        <AccountCircle />
+      </IconButton>
+      <Menu
+        id='menu-appbar'
+        anchorEl={anchorEl}
+        anchorOrigin={{
+          vertical: 'top',
+          horizontal: 'right',
+        }}
+        keepMounted
+        transformOrigin={{
+          vertical: 'top',
+          horizontal: 'right',
+        }}
+        open={open}
+        onClose={handleClose}
+      >
+        <MenuItem onClick={handleClose} component={Link} to='/profile'>
+          Profile
+        </MenuItem>
+        <MenuItem onClick={handleLogOut}>Log Out</MenuItem>
+      </Menu>
+    </div>
+  );
 
   return (
     <div className={classes.grow}>
@@ -56,37 +90,7 @@ const Header = ({ isLoggedIn }) => {
             </Button>
           </div>
           {isLoggedIn ? (
-            <div>
-              <IconButton
-                aria-label='account of current user'
-                aria-controls='menu-appbar'
-                aria-haspopup='true'
-                onClick={handleMenu}
-                color='inherit'
-              >
-                <AccountCircle />
-              </IconButton>
-              <Menu
-                id='menu-appbar'
-                anchorEl={anchorEl}
-                anchorOrigin={{
-                  vertical: 'top',
-                  horizontal: 'right',
-                }}
-                keepMounted
-                transformOrigin={{
-                  vertical: 'top',
-                  horizontal: 'right',
-                }}
-                open={open}
-                onClose={handleClose}
-              >
-                <MenuItem onClick={handleClose} component={Link} to='/profile'>
-                  Profile
-                </MenuItem>
-                <MenuItem onClick={handleLogOut}>Log Out</MenuItem>
-              </Menu>
-            </div>
+            renderProfileMenu
           ) : (
             <Button color='inherit' component={Link} to='/login'>
               Login
