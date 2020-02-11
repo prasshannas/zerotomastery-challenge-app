@@ -13,7 +13,7 @@ const LoginPage = () => (
        <label htmlFor="email">Enter Your Password</label>
        <input type="password" name="password"/>
      </div>
-       <input type="submit" name="submit" value="Login" onClick={() => console.log("button clicked")
+       <input type="button" name="submit" value="Login" onClick={() => console.log("button clicked")
        }/>
  
     </form>
