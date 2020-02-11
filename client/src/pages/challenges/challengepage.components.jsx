@@ -1,6 +1,5 @@
 import React from "react";
-import Challenge from '../../components/challenge/challenge.component';
-import { withRouter } from 'react-router-dom';
+import { withRouter }  from 'react-router-dom';
 
 const ChallengePage = ({history}) => {
   return (
