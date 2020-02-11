@@ -10,4 +10,5 @@ const ChallengePage = ({history}) => {
   );
 };
 
+// we use withRouter to get the history in order to navigate
 export default withRouter(ChallengePage);
