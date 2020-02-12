@@ -1,10 +1,14 @@
 import React from 'react';
-import './loginpage.styles.scss';
+import './signuppage.styles.scss';
 
-const LoginPage = () => (
-  <div className='login-page'>
-    <h2>LOGIN PAGE</h2>
+const SignupPage = () => (
+  <div className='signup-page'>
+    <h2>Signup PAGE</h2>
     <form>
+      <div className='form-input'>
+        <label htmlFor='nickname'>Enter Your Nickname</label>
+        <input id='nickname' type='text' name='nickname' />
+      </div>
       <div className='form-input'>
         <label htmlFor='email'>Enter Your Email</label>
         <input id='email' type='email' name='email' />
@@ -16,11 +20,11 @@ const LoginPage = () => (
       <input
         type='button'
         name='submit'
-        value='Login'
-        onClick={() => console.log('button clicked')}
+        value='Signup'
+        onClick={() => console.log('signup button clicked')}
       />
     </form>
   </div>
 );
 
-export default LoginPage;
+export default SignupPage;
