@@ -1,33 +1,22 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
 import Header from './components/header/header.component';
-import './App.css';
+import HomePage from './pages/home/homepage.component';
+import LoginPage from './pages/login/loginpage.component';
+import ChallengePage from './pages/challenges/challengepage.components';
+import Challenge from './components/challenge/challenge.component';
+import './App.scss';
 
-function App() {
-  return (
-    <Router>
-      <div className='App'>
-        <Header />
-        <Switch>
-          <Route path='/challenges'>
-            <Challenges />
-          </Route>
-          <Route path='/'>
-            <Home />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
-  );
-}
-
-function Home() {
-  return <h2>Home</h2>;
-}
-
-function Challenges() {
-  return <h2>Challenges</h2>;
-}
+const App = () => (
+  <div className='app'>
+    <Header />
+    <Switch>
+      <Route exact path='/' component={HomePage} />
+      <Route path='/login' component={LoginPage} />
+      <Route exact path='/challenges' component={ChallengePage} />
+      <Route path='/challenges/:id' component={Challenge} />
+    </Switch>
+  </div>
+);
 
 export default App;
