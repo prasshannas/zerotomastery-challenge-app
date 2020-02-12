@@ -9,7 +9,7 @@ import './App.scss';
 
 const App = () => (
   <div className="app">
-    <Header />
+    <Header isLoggedIn={false} />
     <Switch>
       <Route exact path="/" component={HomePage} />
       <Route path="/login" component={LoginPage} />

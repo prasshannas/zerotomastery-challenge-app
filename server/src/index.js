@@ -10,4 +10,4 @@ db.sequelize
   // eslint-disable-next-line no-console
   .catch((err) => console.log('Unable to connect to the database:', err));
 
-app.server.listen(app.config.server.port);
+app.server.listen(app.config.port);
