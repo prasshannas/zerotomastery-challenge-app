@@ -29,10 +29,31 @@ Install all dependencies:
 yarn all:install
 ```
 
-Setup the database:
+### Setup the database
+
+Install latest PostgreSQL.
+
+Create a database and a user, for example:
+
+```sql
+create database challenge;
+create user ztm with encrypted password 'mypass';
+grant all privileges on database challenge to ztm;
+```
+
+Create a `.env` file in the `server` directory and add the appropriate values, for example:
 
 ```
-TODO
+DB_USER=ztm
+DB_PASS=mypass
+DB_NAME=challenge
+DB_HOST=localhost
+```
+
+Run the migrations:
+
+```sh
+yarn --cwd server run cross-env NODE_ENV=dev sequelize-cli db:migrate
 ```
 
 ### Running
