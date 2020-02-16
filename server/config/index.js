@@ -1,5 +1,3 @@
-require('dotenv').config();
-
 const env = ['dev', 'prod', 'test'].includes(process.env.NODE_ENV)
   ? process.env.NODE_ENV
   : 'dev';
