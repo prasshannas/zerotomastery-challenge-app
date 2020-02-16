@@ -1,4 +1,5 @@
 module.exports = {
+  port: 3000,
   username: 'root',
   password: null,
   database: 'boilerplate_test',
