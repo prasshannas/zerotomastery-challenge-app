@@ -2,11 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 
-const ChallengePage = ({ history }) => (
-  <div>
-    <h2>CHALLENGES PAGE</h2>
-    <button type="button" onClick={() => history.push(`/challenges/${1}`)}>Join Challenge (1)</button>
-  </div>
+const ChallengePage = ({ history }) => {
+  return (
+    <div>
+      <h2>CHALLENGES PAGE</h2>
+      <button onClick={() => history.push(`/challenges/${1}`)}>
+        Join Challenge (1)
+      </button>
+    </div>
+  );
 );
 
 ChallengePage.propTypes = {
