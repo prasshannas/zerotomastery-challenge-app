@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 
 const ChallengePage = ({ history }) => {
@@ -10,6 +11,12 @@ const ChallengePage = ({ history }) => {
       </button>
     </div>
   );
+);
+
+ChallengePage.propTypes = {
+  history: PropTypes.shape({
+    push: PropTypes.func.isRequired,
+  }).isRequired,
 };
 
 // we use withRouter to get the history in order to navigate

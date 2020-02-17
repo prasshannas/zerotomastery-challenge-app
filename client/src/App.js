@@ -9,8 +9,8 @@ import Challenge from './components/challenge/challenge.component';
 import './App.scss';
 
 const App = () => (
-  <div className='app'>
-    <Header />
+  <div className="app">
+    <Header isLoggedIn={false} />
     <Switch>
       <Route exact path='/' component={HomePage} />
       <Route path='/login' component={LoginPage} />
