@@ -7,9 +7,9 @@ module.exports = (sequelize, DataTypes) => {
       password: DataTypes.STRING,
       avatar: DataTypes.STRING,
     },
-    {}
+    {},
   );
-  User.associate = models => {
+  User.associate = (models) => {
     User.hasMany(models.Challenge, {
       as: 'createdChallenges',
       foreignKey: 'userId',
