@@ -4,7 +4,7 @@ module.exports = {
     es6: true,
     jest: true,
   },
-  extends: ['airbnb', 'plugin:jest/recommended'],
+  extends: ['airbnb', 'plugin:jest/recommended', 'prettier/react'],
   parserOptions: {
     ecmaVersion: 2018,
     ecmaFeatures: {
