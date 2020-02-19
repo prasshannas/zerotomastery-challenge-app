@@ -7,9 +7,9 @@ module.exports = (sequelize, DataTypes) => {
       date: DataTypes.DATE,
       checkIn: DataTypes.BOOLEAN,
     },
-    {}
+    {},
   );
-  CheckIn.associate = models => {
+  CheckIn.associate = (models) => {
     CheckIn.belongsTo(models.User, {
       foreignKey: 'userId',
       as: 'participant',

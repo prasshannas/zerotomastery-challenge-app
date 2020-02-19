@@ -8,9 +8,9 @@ module.exports = (sequelize, DataTypes) => {
       duration: DataTypes.INTEGER,
       rules: DataTypes.STRING,
     },
-    {}
+    {},
   );
-  Challenge.associate = models => {
+  Challenge.associate = (models) => {
     Challenge.belongsTo(models.User, {
       as: 'host',
       foreignKey: 'userId',

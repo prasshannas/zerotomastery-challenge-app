@@ -15,7 +15,7 @@
     "all:install": "yarn install && yarn server:install && yarn client:install",
     "all:dev": "concurrently --k \"yarn server:dev\" \"yarn client:dev\"",
     "all:prod": "yarn client:build && yarn server:prod",
-    "all:test": "yarn server:test",
+    "all:test": "yarn server:test && yarn --cwd client lint",
     "all:format": "prettier --write \"**/*.{js,jsx,scss,json}\""
   },
   "husky": {

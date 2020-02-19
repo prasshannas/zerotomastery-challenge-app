@@ -4,7 +4,7 @@ module.exports = {
     es6: true,
     jest: true,
   },
-  extends: ['airbnb', 'plugin:jest/recommended'],
+  extends: ['airbnb', 'plugin:jest/recommended', 'prettier/react'],
   parserOptions: {
     ecmaVersion: 2018,
     ecmaFeatures: {
@@ -14,15 +14,21 @@ module.exports = {
   rules: {
     'comma-dangle': ['error', 'always-multiline'],
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
-    "jsx-a11y/label-has-associated-control": [ "error", {
-      "required": {
-        "some": [ "nesting", "id"  ]
-      }
-    }],
-    "jsx-a11y/label-has-for": [ "error", {
-      "required": {
-        "some": [ "nesting", "id"  ]
-      }
-    }],
+    'jsx-a11y/label-has-associated-control': [
+      'error',
+      {
+        required: {
+          some: ['nesting', 'id'],
+        },
+      },
+    ],
+    'jsx-a11y/label-has-for': [
+      'error',
+      {
+        required: {
+          some: ['nesting', 'id'],
+        },
+      },
+    ],
   },
 };

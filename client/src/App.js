@@ -12,11 +12,11 @@ const App = () => (
   <div className="app">
     <Header isLoggedIn={false} />
     <Switch>
-      <Route exact path='/' component={HomePage} />
-      <Route path='/login' component={LoginPage} />
-      <Route path='/signup' component={SignupPage} />
-      <Route exact path='/challenges' component={ChallengePage} />
-      <Route path='/challenges/:id' component={Challenge} />
+      <Route exact path="/" component={HomePage} />
+      <Route path="/login" component={LoginPage} />
+      <Route path="/signup" component={SignupPage} />
+      <Route exact path="/challenges" component={ChallengePage} />
+      <Route path="/challenges/:id" component={Challenge} />
     </Switch>
   </div>
 );
